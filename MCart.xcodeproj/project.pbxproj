@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B93E08831F74E18300F919E6 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B93E08821F74E18300F919E6 /* SWRevealViewController.m */; };
 		B95FA07D1F73CE1E007CA4D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B95FA07C1F73CE1E007CA4D3 /* AppDelegate.swift */; };
 		B95FA0821F73CE1E007CA4D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B95FA0801F73CE1E007CA4D3 /* Main.storyboard */; };
 		B95FA0841F73CE1E007CA4D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B95FA0831F73CE1E007CA4D3 /* Assets.xcassets */; };
@@ -17,6 +18,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B93E08801F74E18200F919E6 /* MCart-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MCart-Bridging-Header.h"; sourceTree = "<group>"; };
+		B93E08811F74E18300F919E6 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWRevealViewController.h; path = "../../../../Downloads/SWRevealViewController-master/SWRevealViewController/SWRevealViewController.h"; sourceTree = "<group>"; };
+		B93E08821F74E18300F919E6 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWRevealViewController.m; path = "../../../../Downloads/SWRevealViewController-master/SWRevealViewController/SWRevealViewController.m"; sourceTree = "<group>"; };
 		B95FA0791F73CE1E007CA4D3 /* MCart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MCart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B95FA07C1F73CE1E007CA4D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B95FA0811F73CE1E007CA4D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -39,6 +43,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B93E087F1F74E16600F919E6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B93E08811F74E18300F919E6 /* SWRevealViewController.h */,
+				B93E08821F74E18300F919E6 /* SWRevealViewController.m */,
+				B93E08801F74E18200F919E6 /* MCart-Bridging-Header.h */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		B95FA0701F73CE1E007CA4D3 = {
 			isa = PBXGroup;
 			children = (
@@ -58,6 +72,7 @@
 		B95FA07B1F73CE1E007CA4D3 /* MCart */ = {
 			isa = PBXGroup;
 			children = (
+				B93E087F1F74E16600F919E6 /* Supporting Files */,
 				B95FA0911F73CE45007CA4D3 /* Controller */,
 				B95FA0901F73CE3C007CA4D3 /* View */,
 				B95FA08E1F73CE26007CA4D3 /* Utilities */,
@@ -126,6 +141,7 @@
 				TargetAttributes = {
 					B95FA0781F73CE1E007CA4D3 = {
 						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0900;
 					};
 				};
 			};
@@ -167,6 +183,7 @@
 			files = (
 				B95FA07D1F73CE1E007CA4D3 /* AppDelegate.swift in Sources */,
 				B95FA0931F73CE5D007CA4D3 /* Constants.swift in Sources */,
+				B93E08831F74E18300F919E6 /* SWRevealViewController.m in Sources */,
 				B95FA0981F73CEB8007CA4D3 /* CategoryVC.swift in Sources */,
 				B95FA0961F73CEA5007CA4D3 /* SideMenuVC.swift in Sources */,
 			);
@@ -305,11 +322,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = X4Z5TK3MBV;
 				INFOPLIST_FILE = MCart/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.avimarathe.com.MCart;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MCart/Supporting Files/MCart-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -319,11 +339,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = X4Z5TK3MBV;
 				INFOPLIST_FILE = MCart/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.avimarathe.com.MCart;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MCart/Supporting Files/MCart-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -348,6 +370,7 @@
 				B95FA08D1F73CE1E007CA4D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

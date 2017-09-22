@@ -17,16 +17,20 @@
         </array>
     </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--Reveal View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MCart" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="SWRevealViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="YES" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <segue destination="12Q-N9-7g3" kind="custom" identifier="to_rear" customClass="SWRevealViewControllerSegueSetController" id="Crw-aT-Ud1"/>
+                        <segue destination="0oi-P2-uoF" kind="custom" identifier="to_front" customClass="SWRevealViewControllerSegueSetController" id="GhF-S8-LNe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -248,14 +252,14 @@
                                 <state key="normal" title="Login">
                                     <color key="titleColor" red="0.72156862749999995" green="0.090196078430000007" blue="0.42352941179999998" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
-                                <connections>
-                                    <segue destination="SCa-Zo-tzh" kind="show" id="mro-cf-JSm"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="O8b-Kw-x5p"/>
                     </view>
+                    <connections>
+                        <segue destination="SCa-Zo-tzh" kind="show" identifier="to_LoginVc" id="Y02-MK-A37"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DW4-TK-84N" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
