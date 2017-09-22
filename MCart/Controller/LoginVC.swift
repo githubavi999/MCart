@@ -23,12 +23,17 @@ class LoginVC: UIViewController {
         // Do any additional setup after loading the view.
     }
 
+    @IBAction func loginClicked(_ sender: Any) {
+    }
+    
+    
+    @IBAction func signupClicked(_ sender: Any) {
+        performSegue(withIdentifier: TO_SIGN_UP, sender: nil)
+    }
+    
+    
+    
    
-    @IBAction func signupBtnClicked(_ sender: Any) {
-    }
     
-    
-    @IBAction func signUpClicked(_ sender: Any) {
-    }
     
 }
