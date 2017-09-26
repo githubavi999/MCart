@@ -7,8 +7,10 @@
 //
 
 import UIKit
+import Alamofire
 
-class CategoryVC: UIViewController {
+
+class ProductCategoryVC: UIViewController {
     
     @IBOutlet weak var menuBtn: UIButton!
     
@@ -18,6 +20,21 @@ class CategoryVC: UIViewController {
         menuBtn.addTarget(self.revealViewController(), action: #selector(SWRevealViewController.revealToggle(_:)), for: .touchUpInside)
         self.view.addGestureRecognizer(self.revealViewController().tapGestureRecognizer())
         self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+        
+    }
+    
+    
+    
+    func getAllData()
+    {
+        
+        
+        
+        
+        
+        
+        
+        
         
     }
 
