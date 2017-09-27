@@ -9,6 +9,7 @@
 
 import Foundation
 public struct ProductCategory {
+    
     var id : Int ///
     var name : String /// Category name
     var slug : String
@@ -18,6 +19,23 @@ public struct ProductCategory {
     var images : [CategoryImageProperty]
     var menuOrder : Int
     var count : Int
+    
+    
+    init(id: Int , name: String, slug: String, parent: Int, description: String, display: String, images:[CategoryImageProperty], menuOrder: Int, count: Int)
+    {
+        self.id = id
+        self.name = name
+        self.parent = parent
+        self.description = description
+        self.display = display
+        self.menuOrder = menuOrder
+        self.images = images
+        self.count = count
+        self.slug = slug
+    }
+    
+    
+    
 }
 
 public struct CategoryImageProperty {
@@ -27,4 +45,16 @@ public struct CategoryImageProperty {
     var src : String
     var name : String
     var alt : String
+
+    init(id:Int, dateCreated: NSDate, dateModifier: NSDate, src: String, name: String, alt: String) {
+        self.id = id
+        self.dateCreated = dateCreated
+        self.dateModifier = dateModifier
+        self.src = src
+        self.name = name
+        self.alt = alt
+    }
+
+
+
 }
