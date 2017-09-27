@@ -14,12 +14,12 @@ class CategoryCell: UICollectionViewCell {
     
     @IBOutlet weak var categoryLable: UILabel!
     
-    func UpdateViews(category : ProductCategory)
-    {
-        categoryImage.image = UIImage(named: category.categoryImage)
-        categoryLable.text = category.categoryTitle
-        
-    }
+//    func UpdateViews(category : ProductCategory)
+//    {
+//        categoryImage.image = UIImage(named: category.categoryImage)
+//        categoryLable.text = category.categoryTitle
+//        
+//    }
     
     
     

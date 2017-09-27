@@ -46,9 +46,9 @@ public final class WooClient {
 extension WooClient {
     
     /// A POST HTTP request to create a new Coupon object to server
-    func createCoupon(coupon: Coupon, completionHandler:(_ success: Bool, _ error: NSError?) -> Void){
-        
-    }
+//    func createCoupon(coupon: Coupon, completionHandler:(_ success: Bool, _ error: NSError?) -> Void){
+//        
+//    }
     
     
 }
